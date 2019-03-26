@@ -1,0 +1,368 @@
+@media (min-width: 381px) {
+	.gameInput {
+		width: 135px;
+	}
+}
+
+@media (max-width: 380px) {
+	.gameInput {
+		width: 90%;
+	}
+}
+
+.test p:nth-of-type(1) {
+	font-style: italic;
+}
+
+.game {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	margin: 30px;	
+}
+
+.input {
+	padding: 20px;
+	width: calc(100% - 380px);
+	border-left: 4px solid #22f;
+	min-height: 200px;
+	box-sizing: border-box;
+}
+
+.gameInput {
+	font-size: 18px;
+	border: 1px solid #33f;
+    background-color: #aaf;
+    padding-left: 2px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.input p:not(:last-of-type):not(:first-of-type) {
+	margin-left: 30px;
+}
+
+.flexDirectionRow {
+	flex-direction: row;
+}
+.flexDirectionRowReverse {
+	flex-direction: row-reverse;
+}
+.flexDirectionColumn {
+	flex-direction: column;
+}
+.flexDirectionColumnReverse {
+	flex-direction: column-reverse;
+}
+
+.flexWrapNowrap {
+	flex-wrap: nowrap;
+}
+.flexWrapWrap {
+	flex-wrap: wrap;
+}
+.flexWrapWrapReverse {
+	flex-wrap: wrap-reverse;
+}
+
+
+.flexFlowColumnWrapReverse {
+	flex-flow: column wrap-reverse;
+}
+.flexFlowColumnWrap {
+	flex-flow: column wrap;
+}
+.flexFlowColumnNowrap {
+	flex-flow: column nowrap;
+}
+
+.flexFlowRowWrapReverse {
+	flex-flow: row wrap-reverse;
+}
+.flexFlowRowWrap {
+	flex-flow: row wrap;
+}
+.flexFlowRowNowrap {
+	flex-flow: row nowrap;
+}
+
+.flexFlowRowReverseNowrap {
+	flex-flow: row-reverse nowrap;
+}
+.flexFlowRowReverseWrap {
+	flex-flow: row-reverse wrap;
+}
+.flexFlowRowReverseWrapReverse {
+	flex-flow: row-reverse wrap-reverse;
+}
+
+.flexFlowColumnReverseWrap {
+	flex-flow: column-reverse wrap;
+}
+.flexFlowColumnReverseWrapReverse {
+	flex-flow: column-reverse wrap-reverse;
+}
+.flexFlowColumnReverseNowrap {
+	flex-flow: column-reverse nowrap;
+}
+
+.flexJustifyContentFlexStart {
+	justify-content: flex-start;
+}
+.flexJustifyContentFlexEnd {
+	justify-content: flex-end;
+}
+.flexJustifyContentCenter {
+	justify-content: center;
+}
+.flexJustifyContentSpaceBetween {
+	justify-content: space-between;
+}
+.flexJustifyContentSpaceAround {
+	justify-content: space-around;
+}
+.flexJustifyContentSpaceEvenly {
+	justify-content: space-evenly;
+}
+
+.flexAlignItemsStretch {
+	align-items: stretch;
+}
+.flexAlignItemsFlexStart {
+	align-items: flex-start;
+}
+.flexAlignItemsFlexEnd {
+	align-items: flex-end;
+}
+.flexAlignItemsCenter {
+	align-items: center;
+}
+.flexAlignItemsBaseline {
+	align-items: baseline;
+}
+
+.flexAlignItemsStretch .flexElement {
+	height: auto;
+}
+
+.flexAlignContentFlexStart {
+	align-content: flex-start;
+}
+.flexAlignContentFlexEnd {
+	align-content: flex-end;
+}
+.flexAlignContentCenter {
+	align-content: center;
+}
+.flexAlignContentSpaceAround {
+	align-content: space-around;
+}
+.flexAlignContentSpaceBetween {
+	align-content: space-between;
+}
+.flexAlignContentStretch {
+	align-content: stretch;
+}
+.flexAlignContentSpaceEvenly {
+	align-content: space-evenly;
+}
+
+.flexAlignContentStretch .flexElement {
+	height: auto;
+}
+
+.flexFlexGrow0 {
+	flex-grow: 0;
+}
+.flexFlexGrow1 {
+	flex-grow: 1;
+}
+.flexFlexGrow2 {
+	flex-grow: 2;
+}
+.flexFlexGrow3 {
+	flex-grow: 3;
+}
+.flexFlexGrow4 {
+	flex-grow: 4;
+}
+.flexFlexGrow5 {
+	flex-grow: 5;
+}
+
+
+.flexFlexShrink0 {
+ 	flex-shrink: 0;
+}
+.flexFlexShrink1 {
+	flex-shrink: 1;
+}
+.flexFlexShrink2 {
+	flex-shrink: 2;
+}
+.flexFlexShrink3 {
+	flex-shrink: 3;
+}
+.flexFlexShrink4 {
+	flex-shrink: 4;
+}
+.flexFlexShrink5 {
+	flex-shrink: 5;
+}
+
+.flexOrder_5 {
+	order: -5;
+}
+.flexOrder_4 {
+	order: -4;
+}
+.flexOrder_3 {
+	order: -3;
+}
+.flexOrder_2 {
+	order: -2;
+}
+.flexOrder_1 {
+	order: -1;
+}
+.flexOrder0 {
+	order: 0;
+}
+.flexOrder1 {
+	order: 1;
+}
+.flexOrder2 {
+	order: 2;
+}
+.flexOrder3 {
+	order: 3;
+}
+.flexOrder4 {
+	order: 4;
+}
+.flexOrder5 {
+	order: 5;
+}
+
+.flexFlexBasisAuto {
+	flex-basis: auto;
+}
+.flexFlexBasisContent {
+	flex-basis: content;
+}
+.flexFlexBasis0 {
+	flex-basis: 0;
+}
+.flexFlexBasis1 {
+	flex-basis: 20%;
+}
+.flexFlexBasis2 {
+	flex-basis: 40%;
+}
+.flexFlexBasis3 {
+	flex-basis: 60%;
+}
+.flexFlexBasis4 {
+	flex-basis: 80%;
+}
+.flexFlexBasis5 {
+	flex-basis: 100%;
+}
+
+
+.trueAnswer {
+	background-color: green;
+}
+.falseAnswer {
+	background-color: red;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #55f;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #66f;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #55f;
+  border-radius: 1.3px;
+  border-bottom: 0.2px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #55f;;
+  border-bottom: 0.1px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 0.5px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: #55f;
+  border-bottom: 0.1px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 0.5px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #66f;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #66f;
+}
