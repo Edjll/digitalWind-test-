@@ -272,12 +272,49 @@
 }
 
 
+
+
+.flexAlignSelfStretch {
+	align-self: stretch;
+	height: auto;
+}
+.flexAlignSelfFlexStart {
+	align-self: flex-start;
+}
+.flexAlignSelfFlexEnd {
+	align-self: flex-end;
+}
+.flexAlignSelfCenter {
+	align-self: center;
+}
+.flexAlignSelfBaseline {
+	align-self: baseline;
+}
+
+
+
+
+
+
+
+
 .trueAnswer {
 	background-color: green;
 }
 .falseAnswer {
 	background-color: red;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 input[type=range] {
   -webkit-appearance: none;

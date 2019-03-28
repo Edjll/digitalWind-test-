@@ -1,0 +1,12 @@
+.flexBlock {
+	align-items: center;
+	justify-content: center;
+}
+
+.links a {
+	width: 100%;
+}
+
+.back {
+	text-align: center;
+}
