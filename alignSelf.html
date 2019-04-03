@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
+	<meta name="keywords" content="align-self, flex-start, flex-end, center, stretch, baseline, русский язык, выравнивание flex-элементов">
+	<meta name="description" content="Свойство align-self">
 	<title>Align-self</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/alignItems.css">
@@ -24,187 +24,190 @@
 			<a href="lessons.html">Уроки</a>
 		</nav>
 	</header>
-	<section class="slider">
-		<h1>Flexbox Layout</h1>
+	<div class="slogan">
+		<p>Flexbox Layout</p>
 		<p>Сайт создан в целях демонстрации модуля Flexbox Layout и обучения ему</p>
-	</section>
+	</div>
+	<button id="scrollButton" class="button"></button>
 	<main>
-		<div class="default flexContainer">
-			<h1>align-self</h1>
-			<p>Это свойство позволяет переопределить выравнивание по умолчанию (или заданное с помощью свойства align-items) для отдельных flex-элементов. Применяются такие же значения, как у align-items.</p>
-		</div>
-		<article class="default flexContainer">
-			<h3>align-self: stretch;</h3>
-			<p>Установлен по умолчанию. Flex-элемент будет растягиваться на всю длину <i>поперечной оси</i>, но соблюдает размеры установленные элементу.</p>
-			<div class="flex">
-				<div class="code">
-					<div class="containerCode">
-						<p>.flexContainer {</p>
-						<p>display: flex;</p>
-						<p>flex-flow: row nowrap</p>
-						<p>justify-content: center;</p>
-						<p>align-items: center;</p>
-						<p>}</p>
-					</div>
-					<div class="elementCode">
-						<p>.flexElement {</p>
-						<p>flex: initial;</p>
-						<p>}</p>
-					</div>
-					<div class="elementCode">
-						<p>.flexElement:nth-of-type(2) {</p>
-						<p>align-self: stretch;</p>
-						<p>}</p>
-					</div>
-				</div>
-				<div class="flexBlock">
-					<div class="flexElement">1</div>
-					<div class="flexElement flexAlignSelfStretch">2</div>
-					<div class="flexElement">3</div>
-					<div class="flexElement">4</div>
-					<div class="flexElement">5</div>
-				</div>
+		<article>
+			<div class="default">
+				<h1>align-self</h1>
+				<p>Это свойство позволяет переопределить выравнивание по умолчанию (или заданное с помощью свойства align-items) для отдельных flex-элементов. Применяются такие же значения, как у align-items.</p>
 			</div>
-		</article>
-		<article class="default flexContainer">
-			<h3>align-self: flex-start;</h3>
-			<p>Flex-элемент будет прижиматься к началу <i>поперечной оси</i>.</p>
-			<div class="flex">
-				<div class="code">
-					<div class="containerCode">
-						<p>.flexContainer {</p>
-						<p>display: flex;</p>
-						<p>flex-flow: row nowrap</p>
-						<p>justify-content: center;</p>
-						<p>align-items: center;</p>
-						<p>}</p>
+			<section class="default">
+				<h2>align-self: stretch;</h2>
+				<p>Установлен по умолчанию. Flex-элемент будет растягиваться на всю длину <b>поперечной оси</b>, но соблюдает размеры установленные элементу.</p>
+				<div class="flex">
+					<div class="code">
+						<div class="containerCode">
+							<p>.flexContainer {</p>
+							<p>display: flex;</p>
+							<p>flex-flow: row nowrap</p>
+							<p>justify-content: center;</p>
+							<p>align-items: center;</p>
+							<p>}</p>
+						</div>
+						<div class="elementCode">
+							<p>.flexElement {</p>
+							<p>flex: initial;</p>
+							<p>}</p>
+						</div>
+						<div class="elementCode">
+							<p>.flexElement:nth-of-type(2) {</p>
+							<p>align-self: stretch;</p>
+							<p>}</p>
+						</div>
 					</div>
-					<div class="elementCode">
-						<p>.flexElement {</p>
-						<p>flex: initial;</p>
-						<p>}</p>
-					</div>
-					<div class="elementCode">
-						<p>.flexElement:nth-of-type(3) {</p>
-						<p>align-self: flex-start;</p>
-						<p>}</p>
+					<div class="flexBlock">
+						<div class="flexElement"><span>1</span></div>
+						<div class="flexElement flexAlignSelfStretch"><span>2</span></div>
+						<div class="flexElement"><span>3</span></div>
+						<div class="flexElement"><span>4</span></div>
+						<div class="flexElement"><span>5</span></div>
 					</div>
 				</div>
-				<div class="flexBlock">
-					<div class="flexElement">1</div>
-					<div class="flexElement">2</div>
-					<div class="flexElement flexAlignSelfFlexStart">3</div>
-					<div class="flexElement">4</div>
-					<div class="flexElement">5</div>
+			</section>
+			<section class="default">
+				<h2>align-self: flex-start;</h2>
+				<p>Flex-элемент будет прижиматься к началу <b>поперечной оси</b>.</p>
+				<div class="flex">
+					<div class="code">
+						<div class="containerCode">
+							<p>.flexContainer {</p>
+							<p>display: flex;</p>
+							<p>flex-flow: row nowrap</p>
+							<p>justify-content: center;</p>
+							<p>align-items: center;</p>
+							<p>}</p>
+						</div>
+						<div class="elementCode">
+							<p>.flexElement {</p>
+							<p>flex: initial;</p>
+							<p>}</p>
+						</div>
+						<div class="elementCode">
+							<p>.flexElement:nth-of-type(3) {</p>
+							<p>align-self: flex-start;</p>
+							<p>}</p>
+						</div>
+					</div>
+					<div class="flexBlock">
+						<div class="flexElement"><span>1</span></div>
+						<div class="flexElement"><span>2</span></div>
+						<div class="flexElement flexAlignSelfFlexStart"><span>3</span></div>
+						<div class="flexElement"><span>4</span></div>
+						<div class="flexElement"><span>5</span></div>
+					</div>
 				</div>
-			</div>
+			</section>
+			<section class="default">
+				<h2>align-self: flex-end;</h2>
+				<p>Flex-элемент будет прижиматься к концу <b>поперечной оси</b>.</p>
+				<div class="flex">
+					<div class="code">
+						<div class="containerCode">
+							<p>.flexContainer {</p>
+							<p>display: flex;</p>
+							<p>flex-flow: row nowrap</p>
+							<p>justify-content: center;</p>
+							<p>align-items: center;</p>
+							<p>}</p>
+						</div>
+						<div class="elementCode">
+							<p>.flexElement {</p>
+							<p>flex: initial;</p>
+							<p>}</p>
+						</div>
+						<div class="elementCode">
+							<p>.flexElement:nth-of-type(1) {</p>
+							<p>align-self: flex-end;</p>
+							<p>}</p>
+						</div>
+					</div>
+					<div class="flexBlock">
+						<div class="flexElement flexAlignSelfFlexEnd"><span>1</span></div>
+						<div class="flexElement"><span>2</span></div>
+						<div class="flexElement"><span>3</span></div>
+						<div class="flexElement"><span>4</span></div>
+						<div class="flexElement"><span>5</span></div>
+					</div>
+				</div>
+			</section>
+			<section class="default">
+				<h2>align-self: center;</h2>
+				<p>Flex-элемент располагается по центру <b>поперечной оси</b>.</p>
+				<div class="flex">
+					<div class="code">
+						<div class="containerCode">
+							<p>.flexContainer {</p>
+							<p>display: flex;</p>
+							<p>flex-flow: row nowrap</p>
+							<p>justify-content: center;</p>
+							<p>align-items: flex-end;</p>
+							<p>}</p>
+						</div>
+						<div class="elementCode">
+							<p>.flexElement {</p>
+							<p>flex: initial;</p>
+							<p>}</p>
+						</div>
+						<div class="elementCode">
+							<p>.flexElement:nth-of-type(4) {</p>
+							<p>align-self: center;</p>
+							<p>}</p>
+						</div>
+					</div>
+					<div class="flexBlock flexAlignItemsFlexEnd">
+						<div class="flexElement"><span>1</span></div>
+						<div class="flexElement"><span>2</span></div>
+						<div class="flexElement"><span>3</span></div>
+						<div class="flexElement flexAlignSelfCenter"><span>4</span></div>
+						<div class="flexElement"><span>5</span></div>
+					</div>
+				</div>
+			</section>
+			<section class="default">
+				<h2>align-self: baseline;</h2>
+				<p>Flex-элемент выравнивается по базовой линии. Если элемент со значением baseline один, он выстраивается по своей базовой линии.</p>
+				<div class="flex">
+					<div class="code">
+						<div class="containerCode">
+							<p>.flexContainer {</p>
+							<p>display: flex;</p>
+							<p>flex-flow: row nowrap</p>
+							<p>justify-content: center;</p>
+							<p>align-items: center;</p>
+							<p>}</p>
+						</div>
+						<div class="elementCode">
+							<p>.flexElement {</p>
+							<p>flex: initial;</p>
+							<p>}</p>
+						</div>
+						<div class="elementCode">
+							<p>.flexElement:nth-of-type(odd) {</p>
+							<p>align-self: baseline;</p>
+							<p>}</p>
+						</div>
+					</div>
+					<div class="flexBlock baseline">
+						<div class="flexElement flexAlignSelfBaseline"><span>1</span></div>
+						<div class="flexElement"><span>2</span></div>
+						<div class="flexElement flexAlignSelfBaseline"><span>3</span></div>
+						<div class="flexElement"><span>4</span></div>
+						<div class="flexElement flexAlignSelfBaseline"><span>5</span></div>
+					</div>
+				</div>
+			</section>
 		</article>
 		<article class="default">
-			<h3>align-self: flex-end;</h3>
-			<p>Flex-элемент будет прижиматься к концу <i>поперечной оси</i>.</p>
-			<div class="flex">
-				<div class="code">
-					<div class="containerCode">
-						<p>.flexContainer {</p>
-						<p>display: flex;</p>
-						<p>flex-flow: row nowrap</p>
-						<p>justify-content: center;</p>
-						<p>align-items: center;</p>
-						<p>}</p>
-					</div>
-					<div class="elementCode">
-						<p>.flexElement {</p>
-						<p>flex: initial;</p>
-						<p>}</p>
-					</div>
-					<div class="elementCode">
-						<p>.flexElement:nth-of-type(1) {</p>
-						<p>align-self: flex-end;</p>
-						<p>}</p>
-					</div>
-				</div>
-				<div class="flexBlock">
-					<div class="flexElement flexAlignSelfFlexEnd">1</div>
-					<div class="flexElement">2</div>
-					<div class="flexElement">3</div>
-					<div class="flexElement">4</div>
-					<div class="flexElement">5</div>
-				</div>
-			</div>
-		</article>
-		<article class="default">
-			<h3>align-self: center;</h3>
-			<p>Flex-элемент располагается по центру <i>поперечной оси</i>.</p>
-			<div class="flex">
-				<div class="code">
-					<div class="containerCode">
-						<p>.flexContainer {</p>
-						<p>display: flex;</p>
-						<p>flex-flow: row nowrap</p>
-						<p>justify-content: center;</p>
-						<p>align-items: flex-end;</p>
-						<p>}</p>
-					</div>
-					<div class="elementCode">
-						<p>.flexElement {</p>
-						<p>flex: initial;</p>
-						<p>}</p>
-					</div>
-					<div class="elementCode">
-						<p>.flexElement:nth-of-type(4) {</p>
-						<p>align-self: center;</p>
-						<p>}</p>
-					</div>
-				</div>
-				<div class="flexBlock flexAlignItemsFlexEnd">
-					<div class="flexElement">1</div>
-					<div class="flexElement">2</div>
-					<div class="flexElement">3</div>
-					<div class="flexElement flexAlignSelfCenter">4</div>
-					<div class="flexElement">5</div>
-				</div>
-			</div>
-		</article>
-		<article class="default">
-			<h3>align-self: baseline;</h3>
-			<p>Flex-элемент выравнивается по базовой линии. Если элемент со значением baseline один, он выстраивается по своей базовой линии.</p>
-			<div class="flex">
-				<div class="code">
-					<div class="containerCode">
-						<p>.flexContainer {</p>
-						<p>display: flex;</p>
-						<p>flex-flow: row nowrap</p>
-						<p>justify-content: center;</p>
-						<p>align-items: center;</p>
-						<p>}</p>
-					</div>
-					<div class="elementCode">
-						<p>.flexElement {</p>
-						<p>flex: initial;</p>
-						<p>}</p>
-					</div>
-					<div class="elementCode">
-						<p>.flexElement:nth-of-type(odd) {</p>
-						<p>align-self: baseline;</p>
-						<p>}</p>
-					</div>
-				</div>
-				<div class="flexBlock baseline">
-					<div class="flexElement flexAlignSelfBaseline">1</div>
-					<div class="flexElement">2</div>
-					<div class="flexElement flexAlignSelfBaseline">3</div>
-					<div class="flexElement">4</div>
-					<div class="flexElement flexAlignSelfBaseline">5</div>
-				</div>
-			</div>
-		</article>
-		<section class="default flexContainer">
-			<div class="test">
-				<h3>Давайте проверим, как вы усвоили это свойство?</h3>
+			<h2>Давайте проверим, как вы усвоили это свойство?</h2>
+			<div class="test">	
 				<p>Первое задание</p>
 				<p>В этом задании нужно разместить flex-элемент с номером 1 в начале поперечной оси. Справитесь?</p>
 			</div>
-			<article class="flex">
+			<div class="flex">
 				<div class="code">
 					<div class="containerCode">
 						<p>.flexContainer {</p>
@@ -226,18 +229,18 @@
 					</div>
 				</div>
 				<div class="flexBlock" id="firstFlexContainer">
-					<div class="flexElement" id="task1">1</div>
-					<div class="flexElement">2</div>
-					<div class="flexElement">3</div>
-					<div class="flexElement">4</div>
-					<div class="flexElement">5</div>
+					<div class="flexElement" id="task1"><span>1</span></div>
+					<div class="flexElement"><span>2</span></div>
+					<div class="flexElement"><span>3</span></div>
+					<div class="flexElement"><span>4</span></div>
+					<div class="flexElement"><span>5</span></div>
 				</div>
-			</article>
+			</div>
 			<div class="test">
 				<p>Второе задание</p>
 				<p>В этом задании нужно растянуть flex-элемент с номером 3 по поперечной оси. Справитесь?</p>
 			</div>
-			<article class="flex">
+			<div class="flex">
 				<div class="code">
 					<div class="containerCode">
 						<p>.flexContainer {</p>
@@ -259,18 +262,18 @@
 					</div>
 				</div>
 				<div class="flexBlock" id="secondFlexContainer">
-					<div class="flexElement">1</div>
-					<div class="flexElement">2</div>
-					<div class="flexElement" id="task2">3</div>
-					<div class="flexElement">4</div>
-					<div class="flexElement">5</div>
+					<div class="flexElement"><span>1</span></div>
+					<div class="flexElement"><span>2</span></div>
+					<div class="flexElement" id="task2"><span>3</span></div>
+					<div class="flexElement"><span>4</span></div>
+					<div class="flexElement"><span>5</span></div>
 				</div>
-			</article>
+			</div>
 			<div class="test">
 				<p>Третье задание</p>
 				<p>В этом задании нужно прижать flex-элемент с номером 2 к концу поперечной оси. Справитесь?</p>
 			</div>
-			<article class="flex">
+			<div class="flex">
 				<div class="code">
 					<div class="containerCode">
 						<p>.flexContainer {</p>
@@ -292,18 +295,18 @@
 					</div>
 				</div>
 				<div class="flexBlock flexAlignItemsCenter" id="thirdFlexContainer">
-					<div class="flexElement">1</div>
-					<div class="flexElement" id="task3">2</div>
-					<div class="flexElement">3</div>
-					<div class="flexElement">4</div>
-					<div class="flexElement">5</div>
+					<div class="flexElement"><span>1</span></div>
+					<div class="flexElement" id="task3"><span>2</span></div>
+					<div class="flexElement"><span>3</span></div>
+					<div class="flexElement"><span>4</span></div>
+					<div class="flexElement"><span>5</span></div>
 				</div>
-			</article>
+			</div>
 			<div class="test">
 				<p>Четвёртое задание</p>
 				<p>В этом задании нужно выровнять flex-элемент с номером 4 по базовой линии. Справитесь?</p>
 			</div>
-			<article class="flex">
+			<div class="flex">
 				<div class="code">
 					<div class="containerCode">
 						<p>.flexContainer {</p>
@@ -325,18 +328,18 @@
 					</div>
 				</div>
 				<div class="flexBlock" id="fourthFlexContainer">
-					<div class="flexElement">1</div>
-					<div class="flexElement">2</div>
-					<div class="flexElement">3</div>
-					<div class="flexElement" id="task4">4</div>
-					<div class="flexElement">5</div>
+					<div class="flexElement"><span>1</span></div>
+					<div class="flexElement"><span>2</span></div>
+					<div class="flexElement"><span>3</span></div>
+					<div class="flexElement" id="task4"><span>4</span></div>
+					<div class="flexElement"><span>5</span></div>
 				</div>
-			</article>
+			</div>
 			<div class="test">
 				<p>Пятое задание</p>
 				<p>В этом задании нужно выровнять flex-элемент с номером 5 по центру поперечной оси. Справитесь?</p>
 			</div>
-			<article class="flex">
+			<div class="flex">
 				<div class="code">
 					<div class="containerCode">
 						<p>.flexContainer {</p>
@@ -358,30 +361,28 @@
 					</div>
 				</div>
 				<div class="flexBlock flexAlignItemsFlexEnd" id="fivethFlexContainer">
-					<div class="flexElement">1</div>
-					<div class="flexElement">2</div>
-					<div class="flexElement">3</div>
-					<div class="flexElement">4</div>
-					<div class="flexElement" id="task5">5</div>
+					<div class="flexElement"><span>1</span></div>
+					<div class="flexElement"><span>2</span></div>
+					<div class="flexElement"><span>3</span></div>
+					<div class="flexElement"><span>4</span></div>
+					<div class="flexElement" id="task5"><span>5</span></div>
 				</div>
-			</article>
-			<p id="result">Ваш результат: 0 из 5.</p>
-		</section>
-		<div class="links">
-			<a href="justifyContent.html">
-				<div class="def back">
-					<span>Назад</span>
-					<h3>Свойство order для Flex-элемента</h3>
-				</div>
-			</a>
-		</div>
+			</div>
+			<p id="result">Ваш результат: <b>0</b> из <b>5</b>.</p>
+		</article>
 	</main>
+	<div class="links" id="link">
+		<a href="order.html" class="absoluteTop back">
+			<span class="textLink">order</span>
+		</a>
+	</div>
 	<footer>
 		<div class="footerFlex">
-			<span>@2019 Flexbox</span>
-			<span>Дизайн от <i>Edjll</i></span>
+			<span>&#169; Flexbox, 2019</span>
+			<span>Создатель <a href="https://vk.com/edjll">Edjll</a></span>
 		</div>
 	</footer>
-	<script type="text/javascript" src="js/alignSelf.js"></script>	
+	<script src="js/alignSelf.js"></script>
+	<script src="js/scrollButton.js"></script>	
 </body>
 </html>
