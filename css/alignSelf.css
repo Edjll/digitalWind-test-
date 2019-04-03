@@ -1,12 +1,18 @@
 .flexBlock {
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
-.links a {
-	width: 100%;
-}
-
-.back {
-	text-align: center;
+@media (max-width: 1679px) {
+	.links a {
+		width: 100%;
+		border-radius: 10px;
+		-webkit-transition-duration: 0.5s;
+	     -o-transition-duration: 0.5s;
+	        transition-duration: 0.5s;
+	}
 }
