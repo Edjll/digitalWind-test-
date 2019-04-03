@@ -39,6 +39,7 @@ arr(5);
 function game(id, idContainer, idBlock, type, name, number, amountQuestion, defaultClassBlock) {
 	id.oninput = function() {
 		var inputElement = document.getElementById(this.id);
+		inputElement.value = inputElement.value.toLowerCase();
 	 	defaultFlexElements = 'flexElement' + defaultClassBlock;
 		var elementsColor = idContainer.getElementsByClassName('flexElement');
 		var classElement = document.getElementById(idBlock);
@@ -63,7 +64,7 @@ function game(id, idContainer, idBlock, type, name, number, amountQuestion, defa
 			question[number] = 1;
 		}
 		sumAnswer(amountQuestion);
-		result.innerHTML = 'Ваш результат: ' + amountTrueAnswer + ' из ' + amountQuestion +'.';
+		result.innerHTML = 'Ваш результат: <b>' + amountTrueAnswer + '</b> из <b>' + amountQuestion +'</b>.';
 	} 
 }
 
